@@ -13,3 +13,6 @@ if True:
     print("es verdad ")
 ```
 ## ciclo
+ son los controles de flujo que repiten codigo y su sintacsis es la siguiente 
+ > para for:
+ 
