@@ -11,7 +11,7 @@ else:
 
 #ejercicio 2
 ##INGRESAR DATOS 
-guardar_contraseña="contraseña" 
+guardar_contraseña="ronny2028" 
 ingresar_contraseña= input("ingrese la contraseña: ")
 if guardar_contraseña.upper() ==ingresar_contraseña.upper():
 ## EJECUCUION DE PROGRAMAS 
