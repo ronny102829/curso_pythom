@@ -6,7 +6,7 @@ edad:int=int(imput("escrivir tu edad: "))
 #else:
     #print("eres menor de edad")
  ## segundo ejemplo de if almacenado en vaRRIABLES 
- edad_dos:init=int(input("escribir tu edad: "))
+ edad_dos:int=int(input("escribir tu edad: "))
 respuesta:str="eres mayor de edad" if edad_dos>=18 else "eres menor de edad "
 print(respuesta )
 # crear un programa k imprima las 5 bocales 
@@ -66,7 +66,14 @@ edad_persona:int=int(input("ingrsar su edad: "))
 for edad in range(1,edad+1):
     print(edad)
 #ejercicio 15-05-2024
-primera_persona:str=str(input("ingrsar su nombre: "))
-segunda_persona:str=str(input("ingrsar su nombre: "))
-tersera_persona:str=str(input("ingrsar su nombre: "))
-print(primera_persona,segunda_persona,tersera_persona)
+ultima_letra:str=""
+for _ in range(3):
+    nombre:str=imput("escribe tu nombre: ")
+    last_letter:str=nombre[-1]
+ultima_letra+=last_latter
+print(ultima_letra)
+
+# ejercicio
+
+for i,letra in enumerate("aeiou"):
+    print(letra*(i + 1))
