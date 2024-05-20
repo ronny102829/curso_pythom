@@ -30,3 +30,5 @@ if numero > 0:
 else:
     print("el numero ingresado no es valido")
 ##VISTA DEL RESULTAFO
+# ejercicioo 20-05-2024
+nota=int(input(f"ingrese al nota :"))
