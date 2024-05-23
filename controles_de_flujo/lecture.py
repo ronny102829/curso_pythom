@@ -77,6 +77,29 @@
 
 # for i,letra in enumerate("aeiou"):
 #     print(letra*(i + 1))
-numero=int(input("ingresar el numero: "))
-for i in range(1,13):
-    print(f"{numero}*{i}={numero*i}")
+# numero=int(input("ingresar el numero: "))
+# for i in range(1,13):
+#     print(f"{numero}*{i}={numero*i}")
+
+## while
+# condicion=True
+# while condicion:
+# eval=input("desea continuar [si/no]: ")
+# print("continuas en el bucle")
+#    continue
+# else: 
+#     print("se termino el programa")
+#     condicion=False
+#     break
+
+# contador=0
+# while contador<=5:
+#     print(contador)
+#     contador+1
+# print(f"valor final{contador}")
+# nombre="jose"
+# print(nombre.upper())
+# apellido="ALVARES"
+# print(apellido.upper())
+# segundo_nombre="luis"
+# print(segundo_nombre.upper())
