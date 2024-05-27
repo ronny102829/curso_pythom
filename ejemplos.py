@@ -34,3 +34,32 @@
 
 for i,letra in enumerate("aeiou"):
     print(letra*(i + 1))
+    # # `grs cunca`
+# horarios_libres=["9:00","10:00","12:00","13:00"]
+# reservas=[]
+
+# print("horarios libres: ")
+# for horarios in horarios_libres:
+#     print(horarios) 
+
+# horario_eligido=input("selecionar un horario para reservar: ")
+# if horario_eligido in horarios_libres:
+#     reservas.append(horario_eligido)
+#     print("reserva realisado con exito para el hoario", horario_eligido)    
+# else:
+#     print("horario seleccionado no esta disponible")  
+# costo_alquiler=25
+# pago_realisado= False
+# while not pago_realisado:
+#     confirmacion_pago=input("¿desea realisar el pago de $" + str(costo_alquiler)+"por la reserva ?(SI/NO):")
+#     if confirmacion_pago.lower() == "si" :
+#      pago_realizado=True
+#     print("pago realisado con exito")
+# else:
+#     print("el pago no se ha realisado. porfavor. realice el pago para comfirmar la reserva ")
+#     if reservas:
+#         print("reservas_realisadas") 
+#         for reserva in reservas:
+#             print("horario:", reserva,"-costo:$",costo_alquiler)
+#     else:
+#             print("no se a realisado ninguan reserva")
