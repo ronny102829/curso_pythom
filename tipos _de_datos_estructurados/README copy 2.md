@@ -87,8 +87,3 @@ print(lista_nombre[indice])
 ## YO COMO DOCENTE DE LA INSTTITUTO "JOSE MARIA ARGEDAS"
 ## DESEO K LOS ALUNNOS PUEDAR VER SUS NOTAS (SIN K PUEDAN MODIFICAR ESA NOTA) 
 ### Y DE TAL MANERE , K ELLOS PUEDAN MEJORA EN ESA AREA 
-
-## caoso de uso 
-## como usuario:
-## quiero:
-## para :

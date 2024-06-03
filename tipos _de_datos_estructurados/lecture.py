@@ -53,8 +53,36 @@
 # lista=[1,6,2,5,8,23]
 # print(lista,end="\n ordenar\n")
 # lista.sort()
-lista=[3,235,1,5,6,8,54,2]
-copia_lista=lista.copy()
-copia_lista.sort()
-print(lista)
-print(copia_lista)
+# lista=[3,235,1,5,6,8,54,2]
+# copia_lista=lista.copy()
+# copia_lista.sort()
+# print(lista)
+# print(copia_lista)
+
+
+# Crear una lista con 4 diccionarios de datos de mascotas
+# lista_mascotas = [
+#     {"nombre": "Luna", "edad": 3, "sexo": "Hembra", "raza": "Labrador"},
+#     {"nombre": "Max", "edad": 5, "sexo": "Macho", "raza": "Golden Retriever"},
+#     {"nombre": "Bella", "edad": 2, "sexo": "Hembra", "raza": "Poodle"},
+#     {"nombre": "Rocky", "edad": 4, "sexo": "Macho", "raza": "Bulldog"}
+# ]
+
+# # Mostrar la lista con los 4 diccionarios
+# print("Lista Original:")
+# for mascota in lista_mascotas:
+#     print(mascota)
+
+# # Editar el 3er registro y cambiarle la edad sin modificar la lista original
+# lista_modificada = lista_mascotas.copy()
+# lista_modificada[2]["edad"] = 6
+# lista_modificada[2]["nombre"] ="rex"
+
+# # Mostrar la lista original y luego la lista con el 3er registro modificado
+# print("\nLista Original:")
+# for mascota in lista_mascotas:
+#     print(mascota)
+
+# print("\nLista con el 3er Registro Modificado:")
+# for mascota in lista_modificada:
+#     print(mascota)
