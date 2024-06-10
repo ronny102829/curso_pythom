@@ -88,7 +88,18 @@ print(lista_nombre[indice])
 ## DESEO K LOS ALUNNOS PUEDAR VER SUS NOTAS (SIN K PUEDAN MODIFICAR ESA NOTA) 
 ### Y DE TAL MANERE , K ELLOS PUEDAN MEJORA EN ESA AREA 
 
-## caoso de uso 
-## como usuario:
-## quiero:
-## para :
+
+### 8. lista y diccionario por comprecion 
+es una tecnica pythonica que nos permite crear listas ty diccionariosen una solo linia combinado bucles y diccionarios
+[!NOTE]
+**vlc** value loop condicion - valor bucle condiccion 
+```python 
+lista_amigos=["abel","anthony","edith","ruth"]
+diccionario={}
+for _,v in enumerate(lista_amigos):
+    diccionario[v]=len(v)
+print(diccionario)
+# aplicando el vlc 
+lista_amigos=["abel","anthony","edith","ruth"]
+diccionario={amigo: len(amigo)for amigo  in lista_amigos}
+print(diccionario)

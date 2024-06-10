@@ -99,43 +99,61 @@
 # Función para ver la lista de autos
 
 # ver lista de mis autios 
-autos_ejemplo=[
-('Toyota', 'Corolla', 2020, 'Gris'),
-('Ford', 'Fiesta', 2018, 'Azul'),
-('Chevrolet', 'Camaro', 2019, 'Rojo'),
-('Honda', 'Civic', 2017, 'Negro'),
-('Volkswagen', 'Golf', 2016, 'Blanco'),
-('Hyundai', 'Elantra', 2018, 'Plata'),
-('BMW', 'X5', 2021, 'Azul')
-]
-# mis obciones 
-while True:
-    print("\nMenú de Opciones:")
-    print("1. Ver lista de autos")
-    print("2. Agregar un auto a la lista")
-    print("3. Actualizar la lista de autos")
-    print("4. Salir del programa")
+# autos_ejemplo=[
+# ('Toyota', 'Corolla', 2020, 'Gris'),
+# ('Ford', 'Fiesta', 2018, 'Azul'),
+# ('Chevrolet', 'Camaro', 2019, 'Rojo'),
+# ('Honda', 'Civic', 2017, 'Negro'),
+# ('Volkswagen', 'Golf', 2016, 'Blanco'),
+# ('Hyundai', 'Elantra', 2018, 'Plata'),
+# ('BMW', 'X5', 2021, 'Azul')
+# ]
+# # mis obciones 
+# while True:
+#     print("\nMenú de Opciones:")
+#     print("1. Ver lista de autos")
+#     print("2. Agregar un auto a la lista")
+#     print("3. Actualizar la lista de autos")
+#     print("4. Salir del programa")
 
-    opcion = input("Seleccione una opción: ")
-## ver lista de autos 
-    if opcion == '1':
-        for ordenado in autos_ejemplo:
-            print(ordenado)
-    elif opcion == '2':
-        marca = input("Ingrese la marca del nuevo auto: ")
-        modelo = input("Ingrese el modelo del nuevo auto: ")
-        año = input("Ingrese el año del nuevo auto: ")
-        color = input("Ingrese el color del nuevo auto: ")
-        autos_ejemplo.liste(marca, modelo, año, color)
-    elif opcion == '3':
-        auto_id = input("Ingrese el ID del auto a actualizar: ")
-        marca = input("Ingrese la nueva marca: ")
-        modelo = input("Ingrese el nuevo modelo: ")
-        año = input("Ingrese el nuevo año: ")
-        color = input("Ingrese el nuevo color: ")
-      #  actualizar_auto(auto_id, marca, modelo, año, color)
-    elif opcion == '4':
-        print("Saliendo del programa...")
-        break
-    else:
-        print("Opción inválida. Por favor, seleccione una opción válida.")
+#     opcion = input("Seleccione una opción: ")
+# ## ver lista de autos 
+#     if opcion == '1':
+#         for ordenado in autos_ejemplo:
+#             print(ordenado)
+#     elif opcion == '2':
+#         marca = input("Ingrese la marca del nuevo auto: ")
+#         modelo = input("Ingrese el modelo del nuevo auto: ")
+#         año = input("Ingrese el año del nuevo auto: ")
+#         color = input("Ingrese el color del nuevo auto: ")
+#        # autos_ejemplo(marca, modelo, año, color)
+#     elif opcion == '3':
+#         auto_id = input("Ingrese el ID del auto a actualizar: ")
+#         marca = input("Ingrese la nueva marca: ")
+#         modelo = input("Ingrese el nuevo modelo: ")
+#         año = input("Ingrese el nuevo año: ")
+#         color = input("Ingrese el nuevo color: ")
+#       #  actualizar_auto(auto_id, marca, modelo, año, color)
+#     elif opcion == '4':
+#         print("Saliendo del programa...")
+#         break
+#     else:
+#         print("Opción inválida. Por favor, seleccione una opción válida.")
+
+# 50-06-2024
+# crear una lista de los 20 primeros numeros haciendio uso de la comprencion :
+# Función para verificar si un número es primo
+numeros_primos = []
+num = 2
+
+while len(numeros_primos) < 20:
+    es_primo = True
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            es_primo = False
+            break
+    if es_primo:
+        numeros_primos.append(num)
+    num += 1
+
+print(numeros_primos)

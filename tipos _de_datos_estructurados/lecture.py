@@ -86,3 +86,26 @@
 # print("\nLista con el 3er Registro Modificado:")
 # for mascota in lista_modificada:
 #     print(mascota)
+## 05-06-2024
+# crear una lista de numeros enteros 
+# texto="1,2,8,9,6"
+# # convertir=texto.split(",")
+# # print(convertir)
+# nueva_lista=[]
+# for n in texto.split(",") :
+#     nueva_lista.append(int(n))
+# print(nueva_lista)
+# # aplica el metodo vlc valotr bucle condicion
+# texto="1,2,8,9,6"
+# nueva_lista=[int(n)for n in texto.split(",")if int(n)%2==0] 
+# print(nueva_lista) 
+# diccionaririos por comprencion 
+lista_amigos=["abel","anthony","edith","ruth"]
+diccionario={}
+for _,v in enumerate(lista_amigos):
+    diccionario[v]=len(v)
+print(diccionario)
+# aplicando el vlc 
+lista_amigos=["abel","anthony","edith","ruth"]
+diccionario={amigo: len(amigo)for amigo  in lista_amigos}
+print(diccionario)

@@ -32,8 +32,8 @@
 # print(ultima_letra) 
 
 
-for i,letra in enumerate("aeiou"):
-    print(letra*(i + 1))
+# for i,letra in enumerate("aeiou"):
+#     print(letra*(i + 1))
     # # `grs cunca`
 # horarios_libres=["9:00","10:00","12:00","13:00"]
 # reservas=[]
@@ -63,3 +63,36 @@ for i,letra in enumerate("aeiou"):
 #             print("horario:", reserva,"-costo:$",costo_alquiler)
 #     else:
 #             print("no se a realisado ninguan reserva")
+# Función para verificar si un número es primo
+# def es_primo(num):
+#     if num < 2:
+#         return False
+#     for i in range(2, num):
+#         if num % i == 0:
+#             return False
+#     return True
+
+# # Generar una lista de los primeros 20 números primos
+# numeros_primos = []
+# numero = 2
+# while len(numeros_primos) < 20:
+#     if es_primo(numero):
+#         numeros_primos.append(numero)
+#     numero += 1
+
+# print(numeros_primos]
+# numeros_primos = []
+# num = 2
+
+# while len(numeros_primos) < 20:
+#     es_primo = True
+#     for i in range(2, int(num ** 0.5) + 1):
+#         if num % i == 0:
+#             es_primo = False
+#             break
+#     if es_primo:
+#         numeros_primos.append(num)
+#     num += 1
+
+# print(numeros_primos)
+numeros_primos = [num for num in range(2, 100) if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1))][:20]
