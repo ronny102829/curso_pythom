@@ -100,5 +100,68 @@ alumnos("anthony","crucez","desaprovado")
 ```
 
 ###  desenpaquetado/ empequetado de argumentos(tarea)
+ Las funciones internas de Python son funciones predefinidas que están disponibles para su uso en cualquier programa de Python sin necesidad de importar ningún módulo adicional. Algunas de las funciones internas más comunes en Python incluyen:
+ 
+1.  print() : Utilizada para imprimir mensajes en la consola.
+2.  len() : Devuelve la longitud de un objeto, como una lista o una cadena.
+3.  input() : Permite al usuario ingresar datos desde la consola.
+4.  int() ,  float() ,  str() : Utilizadas para convertir valores a enteros, flotantes o cadenas respectivamente.
+5.  range() : Genera una secuencia de números.
+6.  type() : Devuelve el tipo de un objeto.
+7.  sum() ,  max() ,  min() : Funciones para realizar operaciones matemáticas en listas de números.
+8.  abs() : Devuelve el valor absoluto de un número.
+9.  round() : Redondea un número al entero más cercano.
+ 
+Estas son solo algunas de las muchas funciones internas que Python ofrece. Puedes encontrar una lista completa de las funciones integradas en la documentación oficial de Python.
+ En Python, el empaquetado y desempaquetado se refieren a la capacidad de asignar múltiples valores a una sola variable (empaquetado) y de extraer esos valores individuales de la variable para asignarlos a variables separadas (desempaquetado).
+ 
+Empaquetado en Python:
+ 
+El empaquetado en Python se refiere a la asignación de múltiples valores a una sola variable. Esto se puede hacer de varias formas, como en el caso de una tupla o una lista. Por ejemplo:
+ 
+python
+ Copiar
+###  Empaquetado en una tupla
+tupla = 1, 2, 3
+### Empaquetado en una lista
+lista = [4, 5, 6]
+ 
+ 
+Desempaquetado en Python:
+ 
+El desempaquetado en Python implica extraer los valores individuales de una variable empaquetada y asignarlos a variables separadas. Esto se puede hacer de la siguiente manera:
+ 
+python
+ Copiar
+### Desempaquetado de una tupla
+a, b, c = tupla
+### Desempaquetado de una lista
+x, y, z = lista
+ 
+ 
+Ejemplo de Empaquetado y Desempaquetado:
+ 
+python
+ Copiar
+### Empaquetado
+coordenadas = (10, 20)
+### Desempaquetado
+x, y = coordenadas
+print("Coordenada x:", x)  # Salida: Coordenada x: 10
+print("Coordenada y:", y)  # Salida: Coordenada y: 20
+ 
+ 
+El empaquetado y desempaquetado son técnicas útiles en Python para trabajar con múltiples valores de manera eficiente. Se utilizan principalmente con tuplas, listas y diccionarios para asignar y extraer valores de manera conveniente.
 
 ## funciones internas de python(tarea)
+Las funciones internas de Python son funciones predefinidas que están disponibles para su uso en cualquier programa de Python sin necesidad de importar ningún módulo adicional. Algunas de las funciones internas más comunes en Python incluyen:
+ 
+1.  print() : Utilizada para imprimir mensajes en la consola.
+2.  len() : Devuelve la longitud de un objeto, como una lista o una cadena.
+3.  input() : Permite al usuario ingresar datos desde la consola.
+4.  int() ,  float() ,  str() : Utilizadas para convertir valores a enteros, flotantes o cadenas respectivamente.
+5.  range() : Genera una secuencia de números.
+6.  type() : Devuelve el tipo de un objeto.
+7.  sum() ,  max() ,  min() : Funciones para realizar operaciones matemáticas en listas de números.
+8.  abs() : Devuelve el valor absoluto de un número.
+9.  round() : Redondea un número al entero más cercano.
