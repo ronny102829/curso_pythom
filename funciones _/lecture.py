@@ -60,29 +60,29 @@
 # luego mostrar por terminal rl valor de retorno de mi funcion
 
 # Ejemplo de uso
-nombre = "Juan"
-edad = 30
-def persona(nombre, edad):
-    datos_persona = {
-        "nombre": nombre,
-        "edad": edad
-    }
-    return datos_persona
+# nombre = "Juan"
+# edad = 30
+# def persona(nombre, edad):
+#     datos_persona = {
+#         "nombre": nombre,
+#         "edad": edad
+#     }
+#     return datos_persona
 
-datos_persona =persona(nombre, edad)
-print("los datos de la persona es:", datos_persona)
+# datos_persona =persona(nombre, edad)
+# print("los datos de la persona es:", datos_persona)
 
 
-nombre =input("ingrese su nombre:")
-edad =int(imput("ingrese su edad"))
-def persona(nombre, edad):
-    # datos_persona = {
-    #     "nombre": nombre,
-    #     "edad": edad
-    #}
-    return disct(
-        nombre=nombre,
-        edad=edad
-    )
+# nombre =input("ingrese su nombre:")
+# edad =int(imput("ingrese su edad"))
+# def persona(nombre, edad):
+#     # datos_persona = {
+#     #     "nombre": nombre,
+#     #     "edad": edad
+#     #}
+#     return disct(
+#         nombre=nombre,
+#         edad=edad
+#     )
 
-print(persona(nombre, edad))
+# print(persona(nombre, edad))

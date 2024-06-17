@@ -95,4 +95,18 @@
 #     num += 1
 
 # print(numeros_primos)
-numeros_primos = [num for num in range(2, 100) if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1))][:20]
+# numeros_primos = [num for num in range(2, 100) if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1))][:20]
+def numero_menor(*args):
+    return min(args)
+
+def numero_mayor(*args):
+    return max(args)
+
+def suma_numeros(*args):
+    return sum(args)
+
+# Ejemplo de uso
+numeros = (10, 5, 20, 15, 30)
+print("Número menor:", numero_menor(*numeros))
+print("Número mayor:", numero_mayor(*numeros))
+print("Suma de todos los números:", suma_numeros(*numeros))

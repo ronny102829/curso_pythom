@@ -165,3 +165,7 @@ Las funciones internas de Python son funciones predefinidas que están disponibl
 7.  sum() ,  max() ,  min() : Funciones para realizar operaciones matemáticas en listas de números.
 8.  abs() : Devuelve el valor absoluto de un número.
 9.  round() : Redondea un número al entero más cercano.
+## tipo de funciuones 
+### FUNCIONES ANINIMAS ( FUNCIONES LAMBD)
+### FUNCIONESCALOSURE
+### FUNCIONESCALLBACK
