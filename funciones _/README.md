@@ -166,6 +166,44 @@ Las funciones internas de Python son funciones predefinidas que están disponibl
 8.  abs() : Devuelve el valor absoluto de un número.
 9.  round() : Redondea un número al entero más cercano.
 ## tipo de funciuones 
-### FUNCIONES ANINIMAS ( FUNCIONES LAMBD)
-### FUNCIONESCALOSURE
-### FUNCIONESCALLBACK
+### FUNCIONES ANONIMAS ( FUNCIONES LAMBD)
+ “función lambda” significa función anónima en Python. Para crear una función lambda, Python utiliza la palabra clave lambda. Una expresión lambda consiste en la palabra clave lambda seguida de una lista de argumentos, dos puntos y una única expresión (“expression”). En cuanto se llama la función lambda, se proporciona la expresión con los argumentos y se evalúa:
+
+lambda argument: expression
+Las funciones son una construcción lingüística fundamental de casi todos los lenguajes de programación y representan la unidad más pequeña de código reutilizable. Normalmente, las funciones en Python se definen con la palabra clave def. Por ejemplo, este también sería el caso de la función square que multiplica un número por sí mismo:
+### FUNCIONES CALOSURE
+A. Definición de "Closure"
+Un closure se define como una función anónima que puede acceder a variables fuera de su ámbito de definición. En otras palabras, permite encapsular datos y lógica en un bloque independiente y reutilizable.
+
+B. Importancia en Programación
+La capacidad de utilizar closures en programación aporta flexibilidad y modularidad al código. Esto facilita la creación de funciones más dinámicas y adaptables a diferentes contextos.
+¿Cómo Funcionan los Closures?
+A. Encapsulamiento de Variables
+Un aspecto fundamental de los closures es su capacidad para encapsular variables. Esto significa que pueden retener el estado de las variables en el momento de su creación, incluso si esas variables están fuera de su alcance original.
+
+B. Uso de Variables Externas
+Un closure puede hacer referencia y modificar variables externas a él. Este comportamiento es útil cuando se desea que una función conserve el estado de ciertas variables a lo largo de su ejecución.
+### FUNCIONES CALLBACK
+¿qué son las funciones callback?
+JavaScript es uno de los lenguajes más populares para crear sitios web. Las posibilidades que ofrece este lenguaje de secuencias de comandos se aprovechan para diseñar páginas interactivas que sean capaces de reaccionar a las solicitudes. Para ello, se emplean variables, objetos y funciones en el marco del lenguaje. Todos ellos pueden recurrir los unos a los otros y siempre reflejan el mismo resultado en diferentes navegadores. Detrás de la mayoría de los botones o las pantallas de contenido que aparecen en un momento determinado en los sitios web, se encuentra una función callback.
+
+Sin embargo, las funciones de este tipo no son exclusivas de JavaScript: otros lenguajes de programación conocidos, como C, Java, PHP o Python, también utilizan el callback para pasar ciertos parámetros de usuario de la forma más fácil.
+
+¿Qué es un callback?
+Las funciones siempre se referencian a determinados parámetros. Si asignas una función como parámetro a otra función, hablaremos de un callback. Las funciones callback suelen utilizarse mucho en bibliotecas y frameworks, como las aplicaciones JavaScript jQuery, Angular o node.js. Estas aplicaciones son adecuadas para crear funciones extensibles y se ejecutan únicamente después de que tenga lugar otro evento o circunstancia.
+
+¿Cómo funciona un callback?
+La función callback siempre tiene un efecto determinado que está relacionado con ciertas circunstancias. En otras palabras, solo se invoca si ha tenido lugar otra acción claramente definida. Un buen ejemplo de función callback son los controladores de eventos, que se utilizan, por ejemplo, en elementos HTML como los botones. El evento podría ser un clic del ratón que hace que se ejecute el callback, y la función en sí misma podría provocar el redireccionamiento a otra página o transmitir un valor que se haya introducido en un formulario.
+
+La principal diferencia entre una función normal y un callback sería la siguiente: si bien una función normal se ejecuta directamente, la función callback solo se define y se llama y ejecuta únicamente cuando ocurre un evento concreto. Como hemos mencionado, las funciones callback se utilizan en numerosos lenguajes de programación y, aunque la sintaxis y la estructura de los métodos difieren, sus principios se mantienen en todos los lenguajes.
+### prOgramacion funcionaL
+```python
+lista=[5,7,6,8,4,1]
+def num_minimo(l):
+minimo=l[0]
+for n in l:
+    if n <  mnimo:
+        minimo=n
+min()
+```
+####  averriguar sobre map(), filter(), reeduce()

@@ -86,3 +86,13 @@
 #     )
 
 # print(persona(nombre, edad))
+## eje,plos laMBDA
+saludo=lambda:"HOLA"
+print(saludo)
+
+
+numeros=[12,7,15,20,9]
+pares=list(lambda x:x %2 ==0,numeros)
+impares=list(lambda x:x %2 ==0,numeros)
+print("numeros pares:",pares)
+print("numeros impares:",impares)
