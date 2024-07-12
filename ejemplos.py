@@ -73,29 +73,29 @@
 #     return True
 
 # # Generar una lista de los primeros 20 números primos
-# numeros_primos = []
-# numero = 2
-# while len(numeros_primos) < 20:
-#     if es_primo(numero):
-#         numeros_primos.append(numero)
-#     numero += 1
+numeros_primos = []
+numero = 2
+while len(numeros_primos) < 20:
+    if es_primo(numero):
+        numeros_primos.append(numero)
+    numero += 1
 
-# print(numeros_primos]
-# numeros_primos = []
-# num = 2
+print(numeros_primos)
+numeros_primos = []
+num = 2
 
-# while len(numeros_primos) < 20:
-#     es_primo = True
-#     for i in range(2, int(num ** 0.5) + 1):
-#         if num % i == 0:
-#             es_primo = False
-#             break
-#     if es_primo:
-#         numeros_primos.append(num)
-#     num += 1
+while len(numeros_primos) < 20:
+    es_primo = True
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            es_primo = False
+            break
+    if es_primo:
+        numeros_primos.append(num)
+    num += 1
 
-# print(numeros_primos)
-# numeros_primos = [num for num in range(2, 100) if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1))][:20]
+print(numeros_primos)
+numeros_primos = [num for num in range(2, 100) if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1))][:20]
 def numero_menor(*args):
     return min(args)
 

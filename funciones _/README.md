@@ -207,3 +207,143 @@ for n in l:
 min()
 ```
 ####  averriguar sobre map(), filter(), reeduce()
+### map 
+Esta función trabaja de una forma muy similar a filter(), con la diferencia que en lugar de aplicar una condición a un elemento de una lista o secuencia, aplica una función sobre todos los elementos y como resultado se devuelve un iterable de tipo map:
+```python
+
+def doblar(numero):
+    return numero*2
+
+numeros = [2, 5, 10, 23, 50, 33]
+
+map(doblar, numeros)
+
+<map at 0x212eb6e0748>
+```
+Fácilmente podemos transformar este iterable en una lista:
+
+```python
+list(map(doblar, numeros))
+
+[4, 10, 20, 46, 100, 66]
+```
+Y podemos simplificarlo con una función lambda para substituir la llamada de una función definida:
+
+```python
+list( map(lambda x: x*2, numeros) )
+
+[4, 10, 20, 46, 100, 66]
+
+La función map() se utiliza mucho junto a expresiones lambda ya que permite ahorrarnos el esfuerzo de crear bucles for.
+
+Además se puede utilizar sobre más de un iterable con la condición que tengan la misma longitud.
+
+Por ejemplo si queremos multiplicar los números de dos listas:
+
+```pyton
+
+a = [1, 2, 3, 4, 5]
+b = [6, 7, 8, 9, 10]
+
+list( map(lambda x,y : x*y, a,b) )
+
+[7, 9, 11, 13, 15]
+```
+E incluso podemos extender la funcionalidad a tres listas o más:
+
+```python
+c = [11, 12, 13, 14, 15]
+
+list( map(lambda x,y,z : x*y*z, a,b,c) )
+
+[66, 168, 312, 504, 750]
+```
+### Función filter()
+Tal como su nombre indica filter significa filtrar, y es una de mis funciones favoritas, ya que a partir de una lista o iterador y una función condicional, es capaz de devolver una nueva colección con los elementos filtrados que cumplan la condición.
+
+Por ejemplo, supongamos que tenemos una lista varios números y queremos filtrarla, quedándonos únicamente con los múltiples de 5...
+```python
+
+def multiple(numero):    # Primero declaramos una función condicional
+    if numero % 5 == 0:  # Comprobamos si un numero es múltiple de cinco
+        return True      # Sólo devolvemos True si lo es
+
+numeros = [2, 5, 10, 23, 50, 33]
+
+filter(multiple, numeros)
+
+<filter at 0x257ac84abe0>
+```
+Si ejecutamos el filtro obtenemos un objeto de tipo filtro, pero podemos transformarlo en una lista fácilmente haciendo un cast (conversión):
+```python
+
+list( filter(multiple, numeros) )
+
+[5, 10, 50]
+Por tanto cuando utilizamos la función filter() tenemos que enviar una función condicional, pero como recordaréis, no es necesario definirla, podemos utlizar una función anónima lambda:
+
+
+list( filter(lambda numero: numero%5 == 0, numeros) )
+
+[5, 10, 50]
+```
+Así, en una sola línea hemos definido y ejecutado el filtro utilizando una función condicional anónima y una lista de numeros.
+
+Filtrando objetos
+Sin embargo, más allá de filtrar listas con valores simples, el verdadero potencial de filter() sale a relucir cuando necesitamos filtrar varios objetos de una lista.
+
+Por ejemplo, dada una lista con varias personas, nos gustaría filtrar únicamente las que son menores de edad:
+```python
+
+class Persona:
+
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+    def __str__(self):
+        return "{} de {} años".format(self.nombre, self.edad)
+
+
+personas = [
+    Persona("Juan", 35),
+    Persona("Marta", 16),
+    Persona("Manuel", 78),
+    Persona("Eduardo", 12)
+]
+```
+Para hacerlo nos vamos a servir de una función lambda, comprobando el campo edad para cada persona:
+
+```python
+menores = filter(lambda persona: persona.edad < 18, personas)
+
+for menor in menores:
+    print(menor)
+```
+Marta de 16 años
+Eduardo de 12 años
+Sé que es un ejemplo sencillo, pero estoy seguro que os puede servir como base para realizar filtrados en muchos de vuestros proyectos.
+
+### La función reduce()
+reduce() es una función incorporada de Python 2, que toma como argumento un conjunto de valores (una lista, una tupla, o cualquier objeto iterable) y lo "reduce" a un único valor. Cómo se obtiene ese único valor a partir de la colección pasada como argumento dependerá de la función aplicada.
+
+Por ejemplo, el siguiente código reduce la lista [1, 2, 3, 4] al número 10 aplicando la función add(a, b), que retorna la suma de sus argumentos.
+```python
+def add(a, b):
+    return a + b
+
+print(reduce(add, [1, 2, 3, 4]))  # 10
+```
+
+La función pasada como primer argumento debe tener dos parámetros. reduce() se encargará de llamarla de forma acumulativa (es decir, preservando el resultado de llamadas anteriores) de izquierda a derecha. De modo que el código anterior es similar a:
+```python
+print(add(add(add(1, 2), 3), 4))
+
+Es decir, la operación realizada es ((1 + 2) + 3) + 4, de la que resulta 10.
+```
+
+A partir de Python 3 la función fue movida al módulo estándar functools.
+
+```python
+from functools import reduce
+```

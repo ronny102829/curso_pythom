@@ -87,12 +87,43 @@
 
 # print(persona(nombre, edad))
 ## eje,plos laMBDA
-saludo=lambda:"HOLA"
-print(saludo)
+# saludo=lambda:"HOLA"
+# print(saludo)
 
 
-numeros=[12,7,15,20,9]
-pares=list(lambda x:x %2 ==0,numeros)
-impares=list(lambda x:x %2 ==0,numeros)
-print("numeros pares:",pares)
-print("numeros impares:",impares)
+# numeros=[12,7,15,20,9]
+# pares=list(lambda x:x %2 ==0,numeros)
+# impares=list(lambda x:x %2 ==0,numeros)
+# print("numeros pares:",pares)
+# print("numeros impares:",impares)
+#tengo una lista de alumnos que todos ellos aprobaron y paSARON AL TERCER SEMESTRE ,
+# PROBLEMAS enn mi lista  todos estan en el seguno semestre  por lo que tendremos que crear  una salucion que cambie  el campo del 2 al 3 semestre 
+lista_alumnos=[
+    {
+        "nombre":"avel",
+        "edad": 36,
+        "semestre":2
+    },
+    {
+    "nombre":"anthony",
+        "edad": 40,
+        "semestre":2
+    },
+    {
+    "nombre":"edith",
+        "edad": 50,
+        "semestre":2
+    }
+]
+def objeto (e):
+    if "semestre" in e:
+        e["semestre"]=e["semestre"]+1
+def objeto (e):
+        e["programa_etudio"]="apsti"
+    return [
+         e
+    ]
+alumnos_actualisados=list(map(objeto,lista_alumnos))
+print(alumnos_actualisados)
+## filter 
+lista  
