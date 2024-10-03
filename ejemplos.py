@@ -73,40 +73,75 @@
 #     return True
 
 # # Generar una lista de los primeros 20 números primos
-numeros_primos = []
-numero = 2
-while len(numeros_primos) < 20:
-    if es_primo(numero):
-        numeros_primos.append(numero)
-    numero += 1
+# numeros_primos = []
+# numero = 2
+# while len(numeros_primos) < 20:
+#     if es_primo(numero):
+#         numeros_primos.append(numero)
+#     numero += 1
 
-print(numeros_primos)
-numeros_primos = []
-num = 2
+# print(numeros_primos)
+# numeros_primos = []
+# num = 2
 
-while len(numeros_primos) < 20:
-    es_primo = True
-    for i in range(2, int(num ** 0.5) + 1):
-        if num % i == 0:
-            es_primo = False
-            break
-    if es_primo:
-        numeros_primos.append(num)
-    num += 1
+# while len(numeros_primos) < 20:
+#     es_primo = True
+#     for i in range(2, int(num ** 0.5) + 1):
+#         if num % i == 0:
+#             es_primo = False
+# #             break
+#     if es_primo:
+#         numeros_primos.append(num)
+#     num += 1
 
-print(numeros_primos)
-numeros_primos = [num for num in range(2, 100) if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1))][:20]
-def numero_menor(*args):
-    return min(args)
+# print(numeros_primos)
+# numeros_primos = [num for num in range(2, 100) if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1))][:20]
+# def numero_menor(*args):
+#     return min(args)
 
-def numero_mayor(*args):
-    return max(args)
+# def numero_mayor(*args):
+#     return max(args)
 
-def suma_numeros(*args):
-    return sum(args)
+# def suma_numeros(*args):
+#     return sum(args)
+
+# # Ejemplo de uso
+# numeros = (10, 5, 20, 15, 30)
+# print("Número menor:", numero_menor(*numeros))
+# print("Número mayor:", numero_mayor(*numeros))
+# print("Suma de todos los números:", suma_numeros(*numeros))
+class Banco:
+    def _init_(self, nombre, apellido, dni, numero_cuenta, saldo_inicial):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.dni = dni
+        self.numero_cuenta = numero_cuenta
+        self.saldo_inicial = saldo_inicial
+
+    def depositar(self, cantidad):
+        if cantidad > 0:
+            self.saldo_inicial += cantidad
+            print(f"Depósito realizado con éxito. Nuevo saldo: {self.saldo_inicial}")
+        else:
+            print("La cantidad a depositar debe ser mayor que cero.")
+
+    def retirar(self, cantidad):
+        if cantidad > 0 and cantidad <= self.saldo:
+            self.saldo_inicial -= cantidad
+            print(f"Retiro realizado con éxito. Nuevo saldo: {self.saldo_inicial}")
+        elif cantidad > self.saldo_inicial:
+            print("Fondos insuficientes.")
+        else:
+            print("La cantidad a retirar debe ser mayor que cero.")
+
+    def ver_estado_de_cuenta(self):
+        print(f"Nombre: {self.nombre} {self.apellido}")
+        print(f"DNI: {self.dni}")
+        print(f"Número de cuenta: {self.numero_cuenta}")
+        print(f"Saldo actual: {self.saldo_inicial}")
 
 # Ejemplo de uso
-numeros = (10, 5, 20, 15, 30)
-print("Número menor:", numero_menor(*numeros))
-print("Número mayor:", numero_mayor(*numeros))
-print("Suma de todos los números:", suma_numeros(*numeros))
+ cliente1 = Banco("Juan", "Pérez", "12345678A", "ES12345678901234567890", 1000)
+ cliente1.depositar(500)
+ cliente1.retirar(200)
+ cliente1.ver_estado_de_cuenta()
